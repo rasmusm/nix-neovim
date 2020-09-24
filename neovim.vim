@@ -6,7 +6,8 @@ source /home/rasmusm/projects/neovim-conf/core.vim
 set mouse=a
 
 source /home/rasmusm/projects/neovim-conf/neovim-plugins-config.vim
-lua require("neovim-lsp")
+" lua require("neovim-lsp")
+source /home/rasmusm/projects/neovim-conf/neovim-lsp.vim
 
 let g:completion_enable_auto_popup = 0
 
