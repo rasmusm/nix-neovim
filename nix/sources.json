@@ -10,5 +10,17 @@
         "type": "tarball",
         "url": "https://github.com/neovim/neovim/archive/bd7360b39afce5c7b4e7665ee8e857ad07b050cd.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "rnix-lsp": {
+        "branch": "master",
+        "description": "WIP Language Server for Nix! [maintainer=@jD91mZM2]",
+        "homepage": "",
+        "owner": "nix-community",
+        "repo": "rnix-lsp",
+        "rev": "380d6f9cc471f04a7d8bac1e6aaf2a22f4cc3f03",
+        "sha256": "1ryj8nhdqkn23cd3b59fxd73jkiimr2dj2r3b2xs70qdcla6r37z",
+        "type": "tarball",
+        "url": "https://github.com/nix-community/rnix-lsp/archive/380d6f9cc471f04a7d8bac1e6aaf2a22f4cc3f03.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

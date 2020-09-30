@@ -1,4 +1,6 @@
 local nvim_lsp = require'nvim_lsp'
+local configs = require'nvim_lsp/configs'
+local util = require'nvim_lsp/util'
 
 local map = function(type, key, value)
  vim.fn.nvim_buf_set_keymap(0,type,key,value,{noremap = true, silent = true});
@@ -42,6 +44,24 @@ local custom_attach = function(client)
 
 end
 
+  configs["nix_language_server_lsp"] = {
+    default_config = {
+      on_attach=custom_attach;
+      cmd = {"/home/rasmusm/builds/nix-language-server/target/debug/nix-language-server"};
+      filetypes = {'nix'};
+      root_dir = function(fname)
+        return util.find_git_ancestor(fname) or vim.loop.os_homedir()
+      end;
+      settings = {};
+    };
+  }
+-- Check if it's already defined for when I reload this file.
+nvim_lsp.nix_language_server_lsp.setup{}
+
+--nvim_lsp.rnix.setup {
+--  on_attach=custom_attach;
+--  cmd = {"/home/rasmusm/builds/nix-language-server/target/debug/nix-language-server"};
+--}
 
 nvim_lsp.ghcide.setup {
   on_attach=custom_attach,

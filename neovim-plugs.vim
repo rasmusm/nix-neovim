@@ -7,6 +7,8 @@ call plug#begin('/home/rasmusm/projects/neovim-conf/plugged/')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'LnL7/vim-nix'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -19,9 +21,11 @@ Plug 'romainl/flattened'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'kdheepak/lazygit.nvim'
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/diagnostic-nvim'
+Plug 'steelsojka/completion-buffers'
 
 call plug#end()
