@@ -37,6 +37,8 @@
   let WebDevIconsUnicodeDecorateFolderNodesExactMatches = 1
 
 
+  let g:NERDTreeGitStatusUseNerdFonts = 1
+
 " completion
   let g:completion_enable_auto_popup = 0
 
@@ -55,7 +57,7 @@
 " Airline {{{1
 
   let g:airline#extensions#tabline#enabled = 1
-  let g:airline_extensions = []
+  " let g:airline_extensions = []
 "/  let g:airline_theme = 'codedark'
   let g:airline_theme = 'solarized_flood'
 

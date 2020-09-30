@@ -5,6 +5,7 @@ call plug#begin('/home/rasmusm/projects/neovim-conf/plugged/')
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'LnL7/vim-nix'
