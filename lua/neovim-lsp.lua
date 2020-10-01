@@ -56,12 +56,18 @@ end
     };
   }
 -- Check if it's already defined for when I reload this file.
-nvim_lsp.nix_language_server_lsp.setup{}
+nvim_lsp.nix_language_server_lsp.setup{
+  on_attach=custom_attach;
+}
 
 --nvim_lsp.rnix.setup {
 --  on_attach=custom_attach;
 --  cmd = {"/home/rasmusm/builds/nix-language-server/target/debug/nix-language-server"};
 --}
+
+nvim_lsp.ccls.setup {
+  on_attach=custom_attach;
+}
 
 nvim_lsp.ghcide.setup {
   on_attach=custom_attach,

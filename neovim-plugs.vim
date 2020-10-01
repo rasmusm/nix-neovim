@@ -1,5 +1,7 @@
-source /home/rasmusm/projects/neovim-conf/plug.vim
-call plug#begin('/home/rasmusm/projects/neovim-conf/plugged/')
+let s:path = expand('<sfile>:p:h')
+execute 'source ' . s:path . '/plug.vim'
+
+call plug#begin(s:path . '/plugged/')
 
 " Make sure you use single quotes
 

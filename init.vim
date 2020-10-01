@@ -1,13 +1,13 @@
-
-set runtimepath^=/home/rasmusm/projects/neovim-conf/
-source /home/rasmusm/projects/neovim-conf/neovim-plugs.vim
-source /home/rasmusm/projects/neovim-conf/core.vim
+let s:path = expand('<sfile>:p:h')
+execute 'set runtimepath^=' . s:path
+execute 'source ' . s:path . '/neovim-plugs.vim'
+execute 'source ' . s:path . '/core.vim'
 
 set mouse=a
 
-source /home/rasmusm/projects/neovim-conf/neovim-plugins-config.vim
+execute 'source ' . s:path . '/neovim-plugins-config.vim'
 lua require("neovim-lsp")
-source /home/rasmusm/projects/neovim-conf/neovim-lsp.vim
+execute 'source ' . s:path . '/neovim-lsp.vim'
 
 let g:completion_enable_auto_popup = 0
 
@@ -16,6 +16,3 @@ set completeopt=menuone,noinsert,noselect
 
 " Avoid showing message extra message when using completion
 set shortmess+=c
-
-
-
