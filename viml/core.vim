@@ -144,6 +144,8 @@ let spell_auto_type = ""
 " }}}1
 
 " {{{1  Mappings
+let mapleader = ' '
+let maplocalleader = '\'
 
 map <BS> X
 

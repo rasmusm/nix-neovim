@@ -22,5 +22,17 @@
         "type": "tarball",
         "url": "https://github.com/nix-community/rnix-lsp/archive/380d6f9cc471f04a7d8bac1e6aaf2a22f4cc3f03.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "tree_nvim": {
+        "branch": "master",
+        "description": "Neovim file-explorer powered by C++",
+        "homepage": "",
+        "owner": "zgpio",
+        "repo": "tree.nvim",
+        "rev": "c964aaa2f740e1339e68dd580771febe0e0990a6",
+        "sha256": "0imqhj0ssy2lzfscf6dwmz5yz7x0njafmb27q3mwq6hh31xvdfpz",
+        "type": "tarball",
+        "url": "https://github.com/zgpio/tree.nvim/archive/c964aaa2f740e1339e68dd580771febe0e0990a6.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

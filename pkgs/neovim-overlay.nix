@@ -1,5 +1,5 @@
 let
-  sources = import ./nix/sources.nix;
+  sources = import ../nix/sources.nix;
 in
   self: super: {
     neovim-unwrapped = super.neovim-unwrapped.overrideAttrs ( old: rec {

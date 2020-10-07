@@ -1,18 +1,14 @@
 let s:path = expand('<sfile>:p:h')
 execute 'set runtimepath^=' . s:path
-execute 'source ' . s:path . '/neovim-plugs.vim'
-execute 'source ' . s:path . '/core.vim'
+"execute 'source ' . s:path . '/neovim-plugs.vim'
+execute 'source ' . s:path . '/viml/core.vim'
 
+" TODO find a better place
 set mouse=a
+set inccommand=split
 
-execute 'source ' . s:path . '/neovim-plugins-config.vim'
-lua require("neovim-lsp")
-execute 'source ' . s:path . '/neovim-lsp.vim'
+let g:BASE_PATH = s:path
 
-let g:completion_enable_auto_popup = 0
+" execute 'source ' . s:path . '/neovim-lsp.vim'
+execute 'luafile ' . s:path . '/lua/init.lua'
 
-" Set completeopt to have a better completion experience
-set completeopt=menuone,noinsert,noselect
-
-" Avoid showing message extra message when using completion
-set shortmess+=c
