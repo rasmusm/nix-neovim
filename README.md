@@ -50,7 +50,7 @@ have made based on spacemace.
 #### layers
 A layer are like a module but for configs, a layer are a dir under l/ with the name of the layer eg.
 
-`$GITROOT/lua/l/syntax/init.lua` are the base of a layer called *syntax*
+`$GITROOT/lua/l/colors/init.lua` are the base of a layer called *colors*
 
 a layer must at lest have this functions (the name layer can be anything and are not exposed):
 
@@ -61,7 +61,7 @@ local layer = {}
 
 --- Sets plugins required for this layer
 function layer.register_plugins()
-  plug.add_plugin('LnL7/vim-nix') -- example
+  plug.add_plugin('romainl/flattened') --example
 end
 
 --- Init config for theis layer
@@ -74,7 +74,7 @@ return layer
 
 they are called at the right time by `c.layer`
 
-To load a new layer simple add `layer.add_layer("l.syntax")` to `$GITROOT\lua\init.lua (excthange l.syntax with the name of the new layer.
+To load a new layer simple add `layer.add_layer("l.colors")` to `$GITROOT\lua\init.lua (excthange l.colors with the name of the new layer.
 
 ### Plugings
 
