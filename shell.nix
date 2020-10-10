@@ -1,7 +1,7 @@
 {  }:
 let
-  pkgs = import <unstable> { overlays=[ (import ./pkgs/neovim-overlay.nix) ]; };
   sources = import ./nix/sources.nix;
+  pkgs = import sources.nixpkgs { overlays=[ (import ./pkgs/neovim-overlay.nix) ]; };
   rnixlsp = import sources.rnix-lsp {};
   sum-lua-lsp = pkgs.callPackage ./pkgs/sumneko-lua-language-server.nix {};
   tree_nvim = import ./pkgs/tree_nvim.nix {};
@@ -11,9 +11,10 @@ let
 
   lspNix = [ rnixlsp ];
 
+  lspLua = [ sum-lua-lsp ];
+
   # bear for generating compile_commands.json for ccls,
   #  see https://github.com/MaskRay/ccls/wiki/Project-Setup#build-ear
-  lspLua = [ sum-lua-lsp ];
   lspC = [
     pkgs.bear
     pkgs.ccls

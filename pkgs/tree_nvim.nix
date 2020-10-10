@@ -1,6 +1,6 @@
 {
-  pkgs ? import <unstable> { overlays=[ (import ../neovim-overlay.nix) ]; },
-  sources ? import ../nix/sources.nix
+  sources ? import ../nix/sources.nix,
+  pkgs ? import sources.nixpkgs { overlays=[ (import ../neovim-overlay.nix) ]; }
 }:
 
 

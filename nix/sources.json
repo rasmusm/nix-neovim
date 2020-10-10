@@ -5,10 +5,22 @@
         "homepage": "https://neovim.io",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "bd7360b39afce5c7b4e7665ee8e857ad07b050cd",
-        "sha256": "0lg9hwvcaiwj9z6wp9rw80czfs7l3bwvcc916fz87jxafp683m37",
+        "rev": "ce5a260c9ec5c85eb67eef268e3138b11da86224",
+        "sha256": "1z0k7sdb72z43r4kjz6j72fbag7lfj5saa6jjz1m9lnda11x0jik",
         "type": "tarball",
-        "url": "https://github.com/neovim/neovim/archive/bd7360b39afce5c7b4e7665ee8e857ad07b050cd.tar.gz",
+        "url": "https://github.com/neovim/neovim/archive/ce5a260c9ec5c85eb67eef268e3138b11da86224.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "release-20.09",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "1cd0f2d3268034ac3a162e3a75b9cf4e2f41470a",
+        "sha256": "172qg2ygqq80hl5w7j66m2rq6j88c2g6132jzp40qj7p5a2zbga0",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/1cd0f2d3268034ac3a162e3a75b9cf4e2f41470a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "rnix-lsp": {
@@ -29,10 +41,10 @@
         "homepage": "",
         "owner": "zgpio",
         "repo": "tree.nvim",
-        "rev": "c964aaa2f740e1339e68dd580771febe0e0990a6",
-        "sha256": "0imqhj0ssy2lzfscf6dwmz5yz7x0njafmb27q3mwq6hh31xvdfpz",
+        "rev": "84debaa138eb810521f4bd18a5744cc935455731",
+        "sha256": "0ag3nh929jbiwq4rmqshhn38ncq064n1xdjjqz5pm3f24gzibk1a",
         "type": "tarball",
-        "url": "https://github.com/zgpio/tree.nvim/archive/c964aaa2f740e1339e68dd580771febe0e0990a6.tar.gz",
+        "url": "https://github.com/zgpio/tree.nvim/archive/84debaa138eb810521f4bd18a5744cc935455731.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
